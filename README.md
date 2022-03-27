@@ -17,7 +17,6 @@
 ### Chess polyglot Opening Books
 
 -[Elo3300](https://github.com/Lichess-Bot/Lichess-bot-BotLi-/blob/main/engines/elo3300.bin)
-
 -[Lichess-Book](https://github.com/Lichess-Bot/Lichess-bot-BotLi-/blob/main/engines/lichess-book.bin)
 
 ### Heroku Buildpack
