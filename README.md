@@ -12,6 +12,12 @@
 
 - [Stockfish](https://github.com/official-stockfish/Stockfish)
 - [Stockfish Multi Variant (dev)](https://github.com/ddugovic/Stockfish)
+- [Fairy Sf](https://github.com/Lichess-Bot/Lichess-bot-BotLi-/blob/main/engines/fairy-sf)
+
+### Chess polyglot Opening Books
+
+-[Elo3300](https://github.com/Lichess-Bot/Lichess-bot-BotLi-/blob/main/engines/elo3300.bin)
+-[Lichess-Book](https://github.com/Lichess-Bot/Lichess-bot-BotLi-/blob/main/engines/lichess-book.bin)
 
 ### Heroku Buildpack
 
@@ -50,7 +56,7 @@ Within the file `config.yml`:
 - Enter the directory containing the engine executable in the `engine: dir` field.
 - Enter the executable name in the `engine: name` field.
 - You need to adjust the settings in `engine: uci_options` depending on your system.
-- Remember [Line 5](https://github.com/Lichess-Bot/BotLi/blob/c1020fa1ec57f55b669855290620fc36d1eaa79f/config.yml#L5) is put for engines. Now Stockfish engine is putted which play best and fast but only standard. In the case you need Variants you have to put **Stockfish_Multi_Variant_Dev on config yml line 5**
+- Remember [Line 5](https://github.com/Lichess-Bot/BotLi/blob/c1020fa1ec57f55b669855290620fc36d1eaa79f/config.yml#L5) is put for engines. Now Stockfish engine is putted which play best and fast but only standard. In the case you need Variants you have to put **Stockfish_Multi_Variant_Dev on config yml line 5** or **Fairy_Sf**
 
 ## Setup polyglot opening book
 To use a polyglot opening book the name of the book and the path to the book must be entered at the end of the config in the section `books`.
@@ -59,10 +65,10 @@ Several books can be entered here. In the upper area `eninge: polyglot: books` o
 
 ## Matchmaking mode
 
-You can activate the matchmaking mode in your `startbot.sh` by putting # before [Line 7  on start bot sh](https://github.com/Lichess-Bot/BotLi/blob/c1020fa1ec57f55b669855290620fc36d1eaa79f/startbot.sh#L7) and removing # from [Line 9 of start bot sh](https://github.com/Lichess-Bot/BotLi/blob/c1020fa1ec57f55b669855290620fc36d1eaa79f/startbot.sh#L9) file.
+You can activate the matchmaking mode in your `startbot.sh` by putting # before [Line 8  on start bot sh](https://github.com/Lichess-Bot/Lichess-bot-BotLi-/blob/8ccd3f387923cff5766a8276924ddf9d43f1d8cc/startbot.sh#L8) and removing # from [Line 10 of start bot sh](https://github.com/Lichess-Bot/Lichess-bot-BotLi-/blob/8ccd3f387923cff5766a8276924ddf9d43f1d8cc/startbot.sh#L10) file.
 
 
-If you again want to accept Challenge and want to remove match making put # before [Line 7](https://github.com/Lichess-Bot/BotLi/blob/c1020fa1ec57f55b669855290620fc36d1eaa79f/startbot.sh#L9) and remove # on [Line 9](https://github.com/Lichess-Bot/BotLi/blob/c1020fa1ec57f55b669855290620fc36d1eaa79f/startbot.sh#L7).
+If you again want to accept Challenge and want to remove match making put # before [Line 8](https://github.com/Lichess-Bot/Lichess-bot-BotLi-/blob/8ccd3f387923cff5766a8276924ddf9d43f1d8cc/startbot.sh#L8) and remove # on [Line 10](https://github.com/Lichess-Bot/Lichess-bot-BotLi-/blob/8ccd3f387923cff5766a8276924ddf9d43f1d8cc/startbot.sh#L10).
 
 __CAUTION:__ Be careful with matchmaking mode, lichess will rate limit you if you let it run for too long!
 
