@@ -6,8 +6,7 @@ engine:                                   # Engine settings.
   ponder: true                            # Think on opponent's time.
   polyglot:
     enabled: true                         # Activate polyglot book.
-
-    books:
+   books:
       white: "lichess-book"                      # Name of the book to use as white.
       black: "elo3300"                         # Name of the book to use as black.
       standard: null            # Name of the book to use if there is no specific book for white, black or chess960.
