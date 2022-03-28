@@ -6,18 +6,19 @@ engine:                                   # Engine settings.
   ponder: true                            # Think on opponent's time.
   polyglot:
     enabled: true                         # Activate polyglot book.
+
     books:
       white: "lichess-book"                      # Name of the book to use as white.
       black: "elo3300"                         # Name of the book to use as black.
       standard: null            # Name of the book to use if there is no specific book for white, black or chess960.
-      chess960: null                      # Name of the book to use for Chess960.
-    selection: "best_move"                # Move selection is one of "weighted_random", "uniform_random" or "best_move".
+     chess960: null                      # Name of the book to use for Chess960.
+   selection: "best_move"                # Move selection is one of "weighted_random", "uniform_random" or "best_move".
   pybook:
     enabled: false                        # Activate pybook.
     book: "/path/to/pybook"               # Path to pybook.
   online_moves:
     chessdb:
-      enabled: true                      # Activate online moves from https://chessdb.cn/queryc_en/
+      enabled: false                      # Activate online moves from https://chessdb.cn/queryc_en/
       min_depth: 20                       # Minimum evaluation depth.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
