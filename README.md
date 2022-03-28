@@ -1,5 +1,15 @@
 # Overview
 
+**Lichess Li Bot Offical logo:**
+
+
+-     -  ______       _   
+| |   (_) | ___ \     | | 
+| |    -  | |_/ / ___ | |_
+| |   | | | ___ \/ _ \| __
+| |___| | | |_/ / (_) | |_
+\_____/_| \____/ \___/ \__
+
 **LiBot** is a bot for Lichess. Strongly inspired by [ShailChoksi/lichess-bot](https://github.com/ShailChoksi/lichess-bot). It extends its features with a matchmaking mode where the bot automatically challenges other bots with similar ratings.
  The main idea taken from [Torom bot Li](https://github.com/Torom/BotLi) and main thanks to him for  bringing up this awesome features
 
