@@ -1,4 +1,4 @@
-token: "lip_MBHBy3EXqxvezOOFoPrm"         # Lichess OAuth2 Token.
+ token: "lip_MBHBy3EXqxvezOOFoPrm"         # Lichess OAuth2 Token.
 
 engine:                                   # Engine settings.
   dir: "./engines"               # Directory containing the engine.
@@ -6,12 +6,12 @@ engine:                                   # Engine settings.
   ponder: true                            # Think on opponent's time.
   polyglot:
     enabled: true                         # Activate polyglot book.
-   books:
+    books:
       white: "lichess-book"                      # Name of the book to use as white.
       black: "elo3300"                         # Name of the book to use as black.
       standard: null            # Name of the book to use if there is no specific book for white, black or chess960.
-     chess960: null                      # Name of the book to use for Chess960.
-   selection: "best_move"                # Move selection is one of "weighted_random", "uniform_random" or "best_move".
+      chess960: null                      # Name of the book to use for Chess960.
+    selection: "best_move"                # Move selection is one of "weighted_random", "uniform_random" or "best_move".
   pybook:
     enabled: false                        # Activate pybook.
     book: "/path/to/pybook"               # Path to pybook.
@@ -92,3 +92,4 @@ matchmaking:
 books: 
     lichess-book: "./engines/lichess-book.bin"  # Name of the opening book (to be used above in the polyglot section) and path to the polyglot opening book.  
     elo3300: "./engines/elo3300.bin"
+
