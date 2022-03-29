@@ -17,7 +17,7 @@ engine:                                   # Engine settings.
     book: "/path/to/pybook"               # Path to pybook.
   online_moves:
     chessdb:
-      enabled: false                      # Activate online moves from https://chessdb.cn/queryc_en/
+      enabled: true                      # Activate online moves from https://chessdb.cn/queryc_en/
       min_depth: 20                       # Minimum evaluation depth.
       min_time: 40                        # Time the bot must have at least to use the online move.
       timeout: 5                          # Time the server has to respond.
@@ -91,4 +91,4 @@ matchmaking:
 
 books: 
     lichess-book: "./engines/lichess-book.bin"  # Name of the opening book (to be used above in the polyglot section) and path to the polyglot opening book.  
-    elo3300: "./engines/elo3300.bin"
+    elo3300: "./engines/elo3300.bin
