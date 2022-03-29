@@ -92,4 +92,3 @@ matchmaking:
 books: 
     lichess-book: "./engines/lichess-book.bin"  # Name of the opening book (to be used above in the polyglot section) and path to the polyglot opening book.  
     elo3300: "./engines/elo3300.bin"
-
